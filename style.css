@@ -1,0 +1,95 @@
+body{
+    background:linear-gradient(to right, #0f9b0f,#00c9ff);
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 100Vh;
+  
+}
+
+.container{
+    box-sizing: border-box;
+    inline-size: 400px;
+    background-color: rgba(255, 255, 255, 0.296);
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    border-radius: 6px;
+}
+h1{
+    text-align: center;
+    color: white;
+    font:  sans-serif;
+}
+
+#inputF{
+    width: 80%;
+    padding: 4px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid white;
+}
+#inputF:focus{
+    border-color: #ffD700;
+}
+
+
+::placeholder{
+    font-weight: 600;
+}
+
+#selbtn{
+    margin-block: .3rem;
+ }
+button{
+    border: none;
+    background:rgba(255, 255, 255, 0.669);
+    padding:5px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    &:hover{
+        background-color:rgba(255, 255, 255, 0.228) ;
+        color: white;
+    }
+}
+
+
+
+/* javascript */
+.ptag {
+  background: rgba(255, 255, 255, 0.409);
+  border-radius: 5px;
+  padding-inline: 5px;
+  padding-block: 2px;
+  max-width: max-content;
+
+  
+}
+
+
+
+
+.ptag button{
+    background: none;
+    color: black;
+   
+} 
+
+@media (width < 500px) {
+    .container{
+        width: 100%;
+        margin-inline: auto;   
+
+    }
+    #selbtn{
+     padding-inline:  px;
+    }
+    body{
+        padding: 0;
+    }
+    #inputF{
+        width: 100%;
+    }
+    
+}
